@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Josefin+Sans&display=swap" rel="stylesheet">    <title>Weather-Based Employee Scheduling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather-Based Employee Scheduling</h1>
+        <form id="weather-form">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="country-code">Country Code (e.g., US):</label>
+            <input type="text" id="country-code" name="country-code" required>
+
+            <label for="total-employees">Total Number of Employees:</label>
+            <input type="number" id="total-employees" name="total-employees" required>
+
+            <button type="submit">Get Staffing Recommendations</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
